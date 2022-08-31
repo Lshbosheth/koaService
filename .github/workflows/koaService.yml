@@ -29,7 +29,7 @@ jobs:
        first_ssh: |
         rm -rf /home/koaService
        scp: |
-            /home/runner/work/kosService/kosService/* => /home/koaService
+            /home/runner/work/kosService/* => /home/koaService
        last_ssh: |
         cd /home/koaService
         npm i
