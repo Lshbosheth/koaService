@@ -32,6 +32,6 @@ jobs:
             ./* => /home/koaService
        last_ssh: |
         cd /home/koaService
-        npm i
+        sudo npm i
         cd ..
         pm2 reload koaService
