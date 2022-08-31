@@ -5,7 +5,8 @@ name: koaService CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
