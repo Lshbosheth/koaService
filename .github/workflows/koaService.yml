@@ -26,6 +26,8 @@ jobs:
        user: ${{ secrets.SERVER_USER }}
        pass: ${{ secrets.SERVER_PASS }}
        connect_timeout: 10s
+       first_ssh: |
+        rm -rf /home/koaService
        scp: |
             /home/runner/work/kosService/kosService/* => /home/koaService
        last_ssh: |
