@@ -16,7 +16,6 @@ app.listen(3000, () => {
     console.log('服务器启动')
 })
 app.use(router.routes())
-
 router.get("/users", async function(ctx) {
     const users = await db.getAll();
     console.log(users)
