@@ -8,6 +8,7 @@ const connection = mysql.createConnection({
     multipleStatements: true
 })
 connection.connect()
+
 connection.query('select 1 + 1', (err, rows) => { /* */ });
 const query = function (sql) {
   return new Promise((resolve, reject) => {
